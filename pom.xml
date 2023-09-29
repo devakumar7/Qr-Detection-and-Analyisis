@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.14</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>AntiCounterQr</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>AntiCounterQr</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-dom -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-dom</artifactId>
+			<version>1.17</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-anim -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-anim</artifactId>
+			<version>1.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		<!-- Used for Excel 2007 or later (xlsx)  -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.0.1</version>
+</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-svggen -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-svggen</artifactId>
+			<version>1.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.lome</groupId>
+			<artifactId>niceqr</artifactId>
+			<version>0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.jai-imageio</groupId>
+			<artifactId>jai-imageio-core</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>21-ea+24</version>
+		</dependency>
+		<dependency>
+			<groupId>net.glxn.qrgen</groupId>
+			<artifactId>core</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.glxn.qrgen/javase -->
+		<dependency>
+			<groupId>net.glxn.qrgen</groupId>
+			<artifactId>javase</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-transcoder -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-transcoder</artifactId>
+			<version>1.17</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/nu.pattern/opencv -->
+		<dependency>
+			<groupId>nu.pattern</groupId>
+			<artifactId>opencv</artifactId>
+			<version>2.4.9-7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openpnp</groupId>
+			<artifactId>opencv</artifactId>
+			<version>3.2.0-1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.bytedeco/javacpp -->
+		<dependency>
+			<groupId>org.bytedeco</groupId>
+			<artifactId>javacpp</artifactId>
+			<version>1.5.9</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/opencv -->
+		<dependency>
+			<groupId>org.bytedeco.javacpp-presets</groupId>
+			<artifactId>opencv</artifactId>
+			<version>4.0.1-1.4.4</version>
+		</dependency>
+		
+
+		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.70</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.5.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.zxing/javase -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>3.5.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.zxing/zxing-parent -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>zxing-parent</artifactId>
+			<version>3.5.1</version>
+			<type>pom</type>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.boofcv/boofcv-swing -->
+		<dependency>
+			<groupId>org.boofcv</groupId>
+			<artifactId>boofcv-swing</artifactId>
+			<version>0.43.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.boofcv</groupId>
+			<artifactId>boofcv-recognition</artifactId>
+			<version>0.43.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.boofcv/boofcv-core -->
+		<dependency>
+			<groupId>org.boofcv</groupId>
+			<artifactId>boofcv-core</artifactId>
+			<version>0.43.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.boofcv/boofcv-all -->
+		<dependency>
+			<groupId>org.boofcv</groupId>
+			<artifactId>boofcv-all</artifactId>
+			<version>0.27</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.6.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/jfree/jfreechart -->
+		<dependency>
+			<groupId>jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.13</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.knowm.xchart/xchart -->
+		<dependency>
+			<groupId>org.knowm.xchart</groupId>
+			<artifactId>xchart</artifactId>
+			<version>3.8.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wendykierp</groupId>
+			<artifactId>JTransforms</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<!-- Thanks for using https://jar-download.com -->
+
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
